@@ -92,7 +92,7 @@ class Connection(object):
 		"""Raw urlopen command"""
 		if not baseurl:
 			baseurl = self.baseurl
-		print("%s%s" % (baseurl,url))
+		#print("%s%s" % (baseurl,url))
 		req = Request("%s%s" % (baseurl, url), headers=headers)
 		try:
 			req.data = urlencode(data).encode('utf-8') # Python 3
